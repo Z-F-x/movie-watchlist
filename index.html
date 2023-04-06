@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Watchlist</title>
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Jost:wght@300&family=Press+Start+2P&family=Roboto:wght@700&family=Smythe&family=Source+Sans+Pro&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar" id="nav-bar">
+        <div class="nav-header">
+            <h1>Find your film </h1>
+            <a href="./movie-watchlist.html" class="my-watchlist-link">My Watchlist</a>
+        </div>
+        <div class="search-container">
+            <input type="search" class="search-input-field" placeholder="Search... E.g Equilibrium" id="search-input-field"/>
+            <button class="search-btn" id="search-btn">Search</button>
+        </div>
+    </nav>
+<main>
+    <div class="content-container" id="content-container">
+        <div class="placeholder-content" id="placeholder-content">
+            <img src="./images/film_strip_icon.png" class="placeholder-content-image"/>
+            <p class="placeholder-content-text">Start Exploring</p>
+        </div>
+    </div>
+
+    <!-- added-to-watchlis -->
+    <div id="movie-added-to-watchlist">
+        <p>Movie added to Watchlist</p>
+    </div>
+
+</main>
+<script src="index.js" type="module"></script>
+</body>
+</html>

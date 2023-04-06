@@ -1,0 +1,710 @@
+
+html{
+    background: #1C1C1C;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    min-height: 779px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: #121212;
+    margin: 5em auto;
+    width: 550px;
+    min-height: 779px;
+    /* position: relative; */
+
+    /* overflow: hidden;; */
+    /* overscroll-behavior: ; */
+}
+
+main{
+  height: auto;
+  min-height: 10em;
+}
+
+/*Navbar*/
+nav{
+    background-image: url('images/32.png');
+    background-size: 550px, 208px;
+    /* background-position: top; */
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 228px; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    /* position: fixed; */
+    /* z-index: 10; */
+    overflow: hidden;
+    padding-bottom:  2.5em;
+}
+
+.nav-header{
+  padding-top: 5em;
+  display: flex;
+  flex: row;
+}
+
+.Watchlist-nav-header{
+  display: flex;
+  padding-top: 5em 5em;
+  margin: 0;
+}
+
+/*Typography*/
+h1{
+width: 359px;
+height: 47.55px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 42.7947px;
+line-height: 24px;
+/* or 56% */
+color: white;
+letter-spacing: -0.045em;
+padding: 0;
+margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+}
+
+a{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    width: 114px;
+    height: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/*Search bar*/
+.search-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    justify-self: end;
+    align-items: end;
+    /* position: fixed; */
+    /* top: 60%;
+    left: 28.5%; */
+    /* top: 270px; */
+    /* left: 450px; */
+    margin: 0 auto;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+}
+
+.negative-search-result-message{
+margin-top: 10em;
+width: 321px;
+height: 600px;
+left: 115px;
+top: 434px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+/* or 111% */
+
+text-align: center;
+
+color: #787878;
+}
+
+.search-input-field{
+    width: 342px;
+    height: 38px;
+    background: #2E2E2F;
+    border: none;
+    border-radius: 6px 0px 0px 6px;
+    /* position: f;  */
+    top: 20%;
+    left: 28.5%; 
+    /* top: 270px; 
+    left: 450px; */
+    justify-self: end;
+}
+
+.search-input-field::-webkit-search-cancel-button{
+  display: none;
+}
+
+textarea, button, input { outline: none; }
+
+.search-btn{
+    width: 120px;
+    height: 38px;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    background: #4B4B4B;
+    color: #FFFFFF;
+
+}
+
+input {
+    /* custom */
+    caret-color: #A5A5A5;
+    color: #A5A5A5;
+    padding: 0em 2.5em;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  input[type="search"]{
+    background-image: url('./images/search_icon.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 4%;
+    /* background-position-y: -4%; */
+    background-position-x: 1em;
+
+  }
+
+
+
+  
+  .placeholder-content{
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    width: 462px;
+    height: 177.8px;
+    /* position:fixed; */
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: auto auto;
+
+  }
+
+  /*Placeholder content on initial page load for index.html on body / main content section*/
+.placeholder-content-text{
+    margin-top: 0.75em;
+    width: 148px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #2E2E2F;
+}
+
+.placeholder-content-image{
+    Width: 70px;
+    height: 61.25px;
+    /* position:fixed; */
+}
+
+
+/*Body content / Main content of site */
+
+.content-container {
+  display: flex;
+  margin: auto auto;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  height: auto;
+  max-width: 462px;
+  max-height: 147.41;
+}
+
+.my-movie-watchlist-placeholder-content{
+  justify-content: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10em;
+}
+.content-container-active{
+  /* margin-top: 10em; */
+  margin: 0 auto;
+  width: inherit;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* z-index: 0; */
+  padding: 1em;
+}
+
+.movie-search-results, .search-result-meta-data, .search-result-description-paragraph, .added-to-watchlist-movies{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.movie-search-results{
+  display: flex;
+  height: 177.8px;
+  margin: 2.5em 2em;
+  padding: 0;
+  border-bottom: 1.5px solid #2C2C2C;
+  box-sizing: content-box;
+  justify-content: space-between;
+  /* margin: 1em 2em; */
+}
+
+.added-to-watchlist-movies{
+  display: flex;
+  height: 177.8px;
+  margin: 2.5em 2em;
+  padding: 0;
+  border-bottom: 1.5px solid #E5E7EB;
+  box-sizing: content-box;
+  justify-content: space-between;
+}
+
+.search-result-meta-data, .search-result-runtime, .search-result-genre{
+  padding-right: 1em;
+}
+
+.search-result-meta-data{
+    margin-bottom: 0.5em;
+}
+
+.search-result-description-paragraph{
+  overflow:hidden;
+  width: 342px;
+  /* height: 60px; */
+  font-size: 14;
+  color: #A5A5A5;
+  /* max-height; */
+
+
+  max-height: calc(3em * 3); /* 1.5em is the line-height */
+}
+
+.read-more-btn, .show-less-btn{
+  display: inline;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: white;
+  
+}
+
+.read-more-btn {
+  /* display: inline; */
+}
+
+.show-less-btn{
+
+}
+
+.plot-description-paragraph-trauncated {
+  display: inline;
+  /* height: 60px; */
+  /* max-height: calc(0.1em * 3); */
+  
+}
+.plot-description-paragraph-expanded{
+  display: none;
+  overflow:visible;
+  width: 342px;
+  height: auto;
+  font-size: 14;
+  color: #A5A5A5;
+}
+
+.search-result-description-paragraph .read-more {
+  display: inline-block; /* show read more button when content is expanded */
+  font-weight: 400;
+  line-height: 20px;
+  box-shadow: none;
+  
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+ #plot-description-paragraph{
+  /* overflow: hidden; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #A5A5A5;
+  /* height: 4rem; */
+  overflow: hidden;
+  flex: wrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  /* box-sizing: border-box; */
+  /* margin-top: 0.5em; */
+  
+  /* box-sizing: border-box; */
+  /* margin */
+  /* padding-left: 1em; */
+/* or 143% */
+
+
+color: #A5A5A5;
+}
+
+
+
+.search-result-title-and-rating{
+  display: flex;
+  /* justify-content: ; */
+  align-items: center;
+  /* padding: 1em; */
+  padding: 0 1em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.search-result-title{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  word-wrap: break-word;
+  text-align: justified;
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
+  font-size: min(19px, calc(100% - 0.1px));
+  font-weight: 900;
+
+}
+
+.search-result-text{
+  flex-wrap:wrap;
+  display: inline-block;
+
+}
+
+.search-result-rating-star-icon{
+  height: 15px;
+  width: 15px;
+  display: inline;
+  padding-right: 1em;
+  padding-left: 0.2em;
+  justify-content: center;
+  align-items: center;
+  align-self: left;
+  overflow: visible;
+  /* margin: 1em; */
+  /* border-radius: 0.7499999403953552px; */
+}
+
+/*Add to watchlist button*/
+.search-result-add-to-watchlist-btn{
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0em 0em;
+  overflow: hidden;
+  cursor: pointer;
+  /* width: 100%; */
+}
+
+.search-result-remove-from-watchlist-btn{
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0em 0em;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.add-btn-icon{
+  cursor: pointer;
+  background-image: url('./images/add_icon.png');
+  background-position:center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  /* display: flex; */
+  flex-direction: row;
+  align-self: center;
+  background-size: 100%;
+  margin: 0em 0.8em;
+  /* justify-self: center; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* display: inherit; */
+  /* transform: translateY(-50%); */
+  /* position: absolute; */
+  /* background-size: 4%;
+  background-position-y: 0.25em;
+  background-position-x: 5em; */
+  width: 16px;
+  height: 16px;
+  /* background-image: url('./images/add_icon.png'); */
+}
+
+.remove-btn-icon{
+  cursor: pointer;
+  background-image: url('./images/remove_icon.png');
+  background-position:center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  /* display: flex; */
+  flex-direction: row;
+  align-self: center;
+  background-size: 100%;
+  margin: 0em 0.8em;
+  /* justify-self: center; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* display: inherit; */
+  /* transform: translateY(-50%); */
+  /* position: absolute; */
+  /* background-size: 4%;
+  background-position-y: 0.25em;
+  background-position-x: 5em; */
+  width: 16px;
+  height: 16px;
+  /* background-image: url('./images/add_icon.png'); */
+}
+
+
+
+
+
+
+
+
+
+/*=================================================================================================*/
+/*My Movie Watchlist CSS*/
+/*=================================================================================================*/
+
+/*Placeholder content on initial page load for my-watchlist.html on body / main content section*/
+  .my-watchlist-placeholder-headline{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #787878;
+}
+
+  .my-watchlist-placeholder-link{
+    background-image: url('./images/add_icon.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 4%;
+    background-position-y: 0.25em;
+    background-position-x: 5em;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 100%;
+}
+
+  /*Movie Title Results / Body / Content*/
+.movie-title-search-result-container{
+  border: 3px solid red;
+  display: flex;
+  height: inherit;
+  width: inherit;
+  /* overflow: hidden; */
+  /* z-index: 0; */
+}
+
+.search-result-movie-poster{
+  
+  height: 147.41099548339844px;
+  width: 99px;
+  border-radius: 2.329411506652832px;
+  
+}
+
+/*Snackbar popup*/
+#movie-added-to-watchlist{
+  visibility: hidden;
+  min-width: 250px;
+  min-height: 50px;
+  background-color: #333;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  display: flex;
+  margin: auto auto;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+#movie-removed-from-watchlist{
+  visibility: hidden;
+  min-width: 250px;
+  min-height: 50px;
+  background-color: #333;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  display: flex;
+  margin: auto auto;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#movie-added-to-watchlist.show{
+  visibility: visible;
+  /**/
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#movie-removed-from-watchlist.show{
+  visibility: visible;
+  /**/
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0;  opacity: 0;}
+}
+
+
+
+/* @-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0;  opacity: 0;}
+} */
+
+/* #added-to-watchlist{
+
+}
+
+
+#removed-from-watchlist{
+
+} */
+
+
+
+
+
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+
+  /**/
+  /**/
+  /**/
+  /**/
+
+  
